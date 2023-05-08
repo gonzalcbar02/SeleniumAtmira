@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Para hacer que los test sean paralelos se pondra lo siguiente:  parallel="tests" -->
+<suite name="Suite1">
+
+    <listeners>
+        <listener class-name="ExtentListener.ExtentManager"/>
+    </listeners>
+
+    <test name="Test">
+        <classes>
+            <class name="TestCases.TestCase2"></class>
+        </classes>
+    </test>
+
+
+</suite>

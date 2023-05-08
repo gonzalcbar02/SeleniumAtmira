@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Para hacer que los test sean paralelos se pondra lo siguiente:  parallel="tests" -->
+<suite name="Parallel Suite" parallel="tests">
+
+    <test name="Firefox Test ">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="parallelTest.TestBrowser"></class>
+        </classes>
+    </test>
+
+    <test name="Chrome Test ">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="parallelTest.TestBrowser"></class>
+        </classes>
+    </test>
+
+
+</suite>

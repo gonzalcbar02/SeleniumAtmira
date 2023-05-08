@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional Suite">
+
+    <listeners>
+        <listener class-name="CustomListeners.Listeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+   <!-- <groups>
+        <run>
+            Include hace que solo se ejecuten los que estan dentro del include
+             Exclude hace que no se ejecuten los que estan dentro del exclude
+            <include name="smoke"></include>
+
+        </run>
+    </groups> -->
+
+    <test name="Login Test">
+        <classes>
+            <class name="org.example.TestCase1"></class>
+        </classes>
+    </test>
+
+    <test name="Validate Title Test">
+        <classes>
+            <class name="org.example.TestCase2"></class>
+        </classes>
+    </test>
+
+    <test name="Depenceny Test">
+        <classes>
+            <class name="org.example.TestCase3"></class>
+        </classes>
+    </test>
+    
+    <test name="Failure Test">
+        <classes>
+            <class name="org.example.TestFailure"></class>
+        </classes>
+    </test>
+
+</suite>
